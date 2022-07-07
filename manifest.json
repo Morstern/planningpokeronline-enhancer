@@ -1,0 +1,24 @@
+{
+  "name": "PlanningPokerOnline enhancer",
+  "description": "Are you bad in estimating stories? Everytime when you have refinement meeting, you are afraid of overestimating? Do not worry with this extension, you will be able to see other people's votes before moderator flips the cards.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "/images/xd_16.png",
+      "32": "/images/xd_32.png",
+      "128": "/images/xd_128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/xd_16.png",
+    "32": "/images/xd_32.png",
+    "128": "/images/xd_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://planningpokeronline.com/*"],
+      "css": ["main.css"]
+    }
+  ]
+}
